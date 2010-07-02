@@ -1,0 +1,5 @@
+﻿Handy little module that enables you to "bit.ly"-fy any URL on the fly. It also includes caching so that bit.ly is only contacted once for each unique URL.
+
+Usage:
+
+@{exp:bitly bitly_login='YOUR_BITLY_LOGIN' bitly_api_key='YOUR_BITLY_API_KEY' url='{comment_url_title_auto_path}'}@
