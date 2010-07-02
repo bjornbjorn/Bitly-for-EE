@@ -23,6 +23,16 @@ class Bitly {
 		$this->bitly_login = $this->_get_param('bitly_login');
 		$this->bitly_api_key = $this->_get_param('bitly_api_key');
 		
+		if(!$this->bitly_login) // if not specified, might be use in a wootheme so try to find info in global vars
+		{
+			if(isset($this->EE->config->_global_vars['woo_bitly_login']))
+			{
+					$this->bitly_login = $this->EE->config->_global_vars['woo_bitly_login'];
+					$this->bitly_api_key = $this->EE->config->_global_vars['woo_bitly_api_key'];
+
+			}
+		}
+		
 		if($url && $this->bitly_login && $this->bitly_api_key)
 		{
 			$q = $this->EE->db->get_where('bitly', array('long_url' => $url));	// first check the local cache
