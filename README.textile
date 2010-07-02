@@ -1,4 +1,4 @@
-﻿Handy little module that enables you to "bit.ly"-fy any URL on the fly. It also includes caching so that bit.ly is only contacted once for each unique URL.
+﻿Handy little module that enables you to "bit.ly"-fy any URL on the fly. It also includes caching so that the bit.ly API is only contacted once for each unique URL.
 
 Usage:
 
