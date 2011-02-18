@@ -3,3 +3,6 @@
 Usage example (here we use {comment_url_title_auto_path} as URL inside an {exp:channel:entries} tag):
 
 @{exp:bitly bitly_login='YOUR_BITLY_LOGIN' bitly_api_key='YOUR_BITLY_API_KEY' url='{comment_url_title_auto_path}'}@
+
+
+"Bit.ly for ExpressionEngine - More documentation here":http://www.addonbakery.com/expressionengine-addons/bitly.html
