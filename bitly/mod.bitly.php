@@ -19,9 +19,8 @@ class Bitly {
 	{		
 		$this->EE =& get_instance(); // Make a local reference to the ExpressionEngine super object
 		
-		$url = $this->_get_param('url') ? $this->_get_param('url') : $this->EE->functions->fetch_current_uri();
-		$url = urlencode($url);
-		
+		$url = urlencode($this->_get_param('url', $this->EE->functions->fetch_current_uri()));
+
 		$this->bitly_login = $this->_get_param('bitly_login');
 		$this->bitly_api_key = $this->_get_param('bitly_api_key');
 		
