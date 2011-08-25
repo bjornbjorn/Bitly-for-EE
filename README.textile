@@ -1,4 +1,6 @@
-﻿h2. About bit.ly for EE
+﻿README.textile
+
+h2. About bit.ly for EE
 
 Handy little module that enables you to "bit.ly"-fy any URL on the fly. It also includes caching so that the bit.ly API is only contacted once for each unique URL.
 
@@ -11,4 +13,5 @@ h2. Documentation + Other Links
 "Bit.ly for ExpressionEngine - More documentation here":http://www.addonbakery.com/expressionengine-addons/bitly.html
 "More ExpressionEngine Addons":http://www.addonbakery.com
 "ExpressionEngine Themes":http://themes.addonbakery.com/
-"ExpressionEngine Addon Developer":http://www.bybjorn.com/expressionengine/
+
+This addon was developed by Bjørn Børresen "Freelance ExpressionEngine Addon Developer":http://www.bybjorn.com/expressionengine/
