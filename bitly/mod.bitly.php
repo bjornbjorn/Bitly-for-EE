@@ -58,7 +58,7 @@ class Bitly {
 	function _shorten_url($url)
 	{
 		$api_call_url = 'http://api.bit.ly/v3/shorten?login='.$this->bitly_login.'&apiKey='.$this->bitly_api_key.'&longUrl='.$url.'&format=txt';
-		$short_url = @file_get_contents($api_call_url);
+		$short_url = trim(@file_get_contents($api_call_url));
 		if($short_url)
 		{
 			// got short url, cache it so we don't have to ask bitly again
