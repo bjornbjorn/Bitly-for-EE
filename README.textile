@@ -10,8 +10,7 @@ Usage example (here we use {comment_url_title_auto_path} as URL inside an {exp:c
 
 h2. Documentation + Other Links
 
-"Bit.ly for ExpressionEngine - More documentation here":http://www.addonbakery.com/expressionengine-addons/bitly.html
-"More ExpressionEngine Addons":http://www.addonbakery.com
-"ExpressionEngine Themes":http://themes.addonbakery.com/
+"Bit.ly for ExpressionEngine - More documentation here":http://wedoaddons.com/addon/bitly
+"More ExpressionEngine Addons":http://wedoaddons.com/
 
 This addon was developed by Bjørn Børresen "Freelance ExpressionEngine Addon Developer":http://www.bybjorn.com/expressionengine/
