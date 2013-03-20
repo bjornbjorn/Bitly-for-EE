@@ -11,7 +11,8 @@ Usage example (here we use {comment_url_title_auto_path} as URL inside an {exp:c
 This tag can also be used as a tagpair:
 
 @{exp:bitly bitly_login='YOUR_BITLY_LOGIN' bitly_api_key='YOUR_BITLY_API_KEY' url='{comment_url_title_auto_path}'}@
-@<a href="{bitly_url}"> something </a>@
+@<a href="{bitly_url}"> plain bitly url </a>@
+@<a href="https://plus.google.com/share?url={bitly_url_encoded}"> encoded bitly url</a>@
 @{/exp:bitly}@
 
 h2. Documentation + Other Links
