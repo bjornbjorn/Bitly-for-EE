@@ -8,9 +8,16 @@ Usage example (here we use {comment_url_title_auto_path} as URL inside an {exp:c
 
 @{exp:bitly bitly_login='YOUR_BITLY_LOGIN' bitly_api_key='YOUR_BITLY_API_KEY' url='{comment_url_title_auto_path}'}@
 
+This tag can also be used as a tagpair:
+
+@{exp:bitly bitly_login='YOUR_BITLY_LOGIN' bitly_api_key='YOUR_BITLY_API_KEY' url='{comment_url_title_auto_path}'}@
+@<a href="{bitly_url}"> plain bitly url </a>@
+@<a href="https://plus.google.com/share?url={bitly_url_encoded}"> encoded bitly url</a>@
+@{/exp:bitly}@
+
 h2. Documentation + Other Links
 
 "Bit.ly for ExpressionEngine - More documentation here":http://wedoaddons.com/addon/bitly
 "More ExpressionEngine Addons":http://wedoaddons.com/
 
-This addon was developed by Bjørn Børresen "Freelance ExpressionEngine Addon Developer":http://www.bybjorn.com/expressionengine/
+This addon was developed by Bjørn Børresen "Freelance ExpressionEngine Addon Developer":http://www.bybjorn.com/expressionengine/ 
