@@ -13,7 +13,7 @@
  */
 class Bitly_upd {
 		
-	var $version        = '1.0'; 
+	var $version        = '1.0.1';
 	var $module_name = "Bitly";
 	
     function Bitly_upd( $switch = TRUE ) 
@@ -99,7 +99,7 @@ class Bitly_upd {
 	
 	function update($current = '')
 	{
-		return FALSE;
+		return TRUE;
 	}
     
 }

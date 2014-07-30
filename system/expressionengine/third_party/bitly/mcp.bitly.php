@@ -50,17 +50,23 @@ class Bitly_mcp
 		return $this->content_wrapper('index', 'welcome', $vars);
 	}
 
-	
-	function content_wrapper($content_view, $lang_key, $vars = array())
-	{
-		$vars['content_view'] = $content_view;
-		$vars['_base'] = $this->base;
-		$vars['_form_base'] = $this->form_base;
-		$this->EE->cp->set_variable('cp_page_title', lang($lang_key));
-		$this->EE->cp->set_breadcrumb($this->base, lang('bitly_module_name'));
 
-		return $this->EE->load->view('_wrapper', $vars, TRUE);
-	}
+    function content_wrapper($content_view, $lang_key, $vars = array())
+    {
+        $vars['content_view'] = $content_view;
+        $vars['_base'] = $this->base;
+        $vars['_form_base'] = $this->form_base;
+
+        // $this->EE->cp->set_variable was deprecated in 2.6
+        if (version_compare(APP_VER, '2.6', '>=')) {
+            $this->EE->view->cp_page_title = lang($lang_key);
+        } else {
+            $this->EE->cp->set_variable('cp_page_title', lang($lang_key));
+        }
+
+        $this->EE->cp->set_breadcrumb($this->base, lang('seo_lite_module_name'));
+        return $this->EE->load->view('_wrapper', $vars, TRUE);
+    }
 	
 }
 

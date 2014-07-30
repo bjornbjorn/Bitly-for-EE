@@ -1,4 +1,4 @@
-<p>This module will cache the short urls so you only request bit.ly once for each unique URL - <a href='http://ee.bybjorn.com' target='_blank'>developed by:bjorn</a></p>
+<p>This module will cache the short urls so you only request bit.ly once for each unique URL - Documentation over at <a href='http://wedoaddons.com' target='_blank'>wedoaddons.com</a>.</p>
 <p>&nbsp;</p>
 <p><strong>Example usage:</strong></p>
 
